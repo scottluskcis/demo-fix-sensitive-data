@@ -17,6 +17,8 @@ def get_message(name):
     return f"Hello, {name}!"
 
 def hello():
+    print_persons()
+    
     who_are_you = input("Who are you? ")
 
     message = get_message(who_are_you)
