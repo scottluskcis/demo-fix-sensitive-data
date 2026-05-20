@@ -4,6 +4,11 @@ persons = [
     { "name": "Charlie", "age": 35, "identifier": "345-11-3423", "identfier_type": "SSN" },
 ]
 
+def print_persons():
+    print("Known persons:")
+    for person in persons:
+        print(f"- {person['name']}")
+
 def get_message(name):
     for person in persons:
         if person["name"].lower() == name.lower().strip():
