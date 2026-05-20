@@ -1,8 +1,10 @@
-def get_message():
-    return "Hello, World!"
+def get_message(name):
+    return f"Hello, {name}!"
 
 def hello():
-    message = get_message()
+    who_are_you = input("Who are you? ")
+
+    message = get_message(who_are_you)
     return message
 
 
