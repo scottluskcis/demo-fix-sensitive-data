@@ -4,6 +4,14 @@ persons = [
     { "name": "Charlie", "age": 35, "identifier": "***-**-3423", "identfier_type": "SSN" },
 ]
 
+def print_persons():
+    print("-" * 40)
+    print("Known persons:")
+    for person in persons:
+        print(f"- {person['name']}")
+
+    print("-" * 40)
+
 def get_message(name):
     for person in persons:
         if person["name"].lower() == name.lower().strip():
@@ -12,6 +20,10 @@ def get_message(name):
     return f"Hello, {name}!"
 
 def hello():
+    print("=" * 40)
+    print("WELCOME")
+    print_persons()
+
     who_are_you = input("Who are you? ")
 
     message = get_message(who_are_you)
